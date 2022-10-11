@@ -53,7 +53,9 @@ def check_float(user_input: Any) -> bool:
     """
     Checks weather object is float
     """
-    return isinstance(user_input, float)
+    if not isinstance(user_input, float):
+        return False
+    return True
 
 
 def clean_and_tokenize(text: str) -> Optional[list[str]]:
