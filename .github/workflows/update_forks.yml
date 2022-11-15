@@ -17,7 +17,6 @@ jobs:
         uses: actions/github-script@v3
         with:
           script: |
-            const core = require('@actions/core');
             const { issue, repository } = context.payload;
             const [ owner, repo ] = repository.full_name.split('/');
             const { data: pullRequest } = await github.pulls.get({
