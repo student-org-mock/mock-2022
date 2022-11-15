@@ -6,7 +6,6 @@ from typing import Optional, Union, Any
 from math import log
 
 
-
 def check_list(user_input: Any, elements_type: type, can_be_empty: bool) -> bool:
     """
     Checks weather object is list
