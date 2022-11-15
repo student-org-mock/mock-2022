@@ -26,7 +26,6 @@ jobs:
             });
             const { clone_url: prRemoteUrl } = pullRequest.head.repo;
             core.setOutput('pr_remote_url', prRemoteUrl)
-#            console.log(`##[set-output name=pr_remote_url;]${prRemoteUrl}`);
       - uses: actions/checkout@v2
       - name: Merge upstream
         env:
