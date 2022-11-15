@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Fetch remote URL
         id: fetch_remote_url
-        uses: actions/github-script@v3
+        uses: actions/github-script@v6
         with:
           script: |
             const { issue, repository } = context.payload;
@@ -45,7 +45,7 @@ jobs:
           fi
           bash config/github/update_fork.sh --URL ${{ steps.fetch_remote_url.outputs.pr_remote_url }} --USER WhiteJaeger --STRATEGY $STRATEGY --AUTH "$AUTH_TOKEN"
       - name: Report on update
-        uses: actions/github-script@v3
+        uses: actions/github-script@v6
         with:
           script: |
             github.issues.createComment({
