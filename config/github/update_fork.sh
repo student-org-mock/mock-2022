@@ -52,11 +52,11 @@ echo "Using STRATEGY: ${STRATEGY}"
 
 if [[ "$STRATEGY" == 'keep_upstream' ]]; then
   # Merge in favour of the original repository
-
+  echo "Keeping upstream"
   git merge --strategy-option theirs --no-edit origin/main
 
   for lab in $LABS_TO_UPDATE; do
-
+    echo "${lab}"
     git checkout origin/main -- ${lab}/start.py
     git checkout origin/main -- ${lab}/main.py
 
