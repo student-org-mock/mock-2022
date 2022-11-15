@@ -16,7 +16,7 @@
   * `albatross` - текст об [альбатросах](https://nplus1.ru/blog/2022/06/14/eye-of-the-albatross)
   * `genome_engineering` - текст об [изменении генома человека](https://nplus1.ru/blog/2022/05/05/manniskan-i-provroret)
   * `pain_detection` - текст о [распознавании уровня боли](https://nplus1.ru/news/2022/09/05/mouse-pain-face)
-* `stop_words` - список стоп слов
+* `stop_words` - список стоп слов.
 
 **Важно:** В рамках данной лабораторной работы **нельзя использовать сторонние модули и модуль collections.**
 
