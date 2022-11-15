@@ -48,6 +48,8 @@ git checkout upstream/main
 
 LABS_TO_UPDATE=$(cat config/labs.txt)
 
+echo "Using STRATEGY: ${STRATEGY}"
+
 if [[ "$STRATEGY" == 'keep_upstream' ]]; then
   # Merge in favour of the original repository
 
